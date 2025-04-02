@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#F5E8E8">
+
+    <LinearLayout
+        android:id="@+id/formContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:background="#E6C9C9"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            app:hintTextColor="#8E3C38"
+            app:boxStrokeColor="#7D322E">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editTextNome"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Nome do Item"
+                android:minHeight="48dp"
+                android:textColor="#5E201B" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            app:hintTextColor="#8E3C38"
+            app:boxStrokeColor="#7D322E">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editTextValor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Valor do Item"
+                android:inputType="numberDecimal"
+                android:minHeight="48dp"
+                android:textColor="#5E201B" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            app:hintTextColor="#8E3C38"
+            app:boxStrokeColor="#7D322E">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editTextUrl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="URL da Imagem"
+                android:minHeight="48dp"
+                android:textColor="#5E201B" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/buttonAdicionar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Adicionar à Lista"
+            android:textColor="#FFFFFF"
+            app:backgroundTint="#8E3C38"
+            app:cornerRadius="8dp"
+            app:elevation="4dp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/buttonVerLista"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Ver Lista de Itens"
+            android:textColor="#FFFFFF"
+            app:backgroundTint="#7D322E"
+            app:cornerRadius="8dp"
+            app:elevation="4dp" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
